@@ -1,9 +1,14 @@
 package cn.xdevops.springbootuprunning.sburrestdemo;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.UUID;
 
+@Entity
 public class Coffee {
-    private final String id;
+    @Id
+    private String id;
     private String name;
 
     public Coffee(String id, String name) {
@@ -13,6 +18,10 @@ public class Coffee {
 
     public Coffee(String name) {
         this(UUID.randomUUID().toString(), name);
+    }
+
+    public Coffee() {
+
     }
 
     public String getId() {
@@ -25,5 +34,9 @@ public class Coffee {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

@@ -4,3 +4,11 @@ Source
 - Code Repository: https://resources.oreilly.com/examples/0636920338727
 - Branch: chapter3end
 
+
+
+Includes:
+- REST API
+- Data Access
+  - JPA
+  - H2
+
