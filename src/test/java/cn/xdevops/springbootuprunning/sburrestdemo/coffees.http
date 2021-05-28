@@ -1,0 +1,53 @@
+# list all coffees
+GET http://localhost:8080/coffees
+Content-Type: application/json
+Connection: keep-alive
+
+###
+
+# add a coffee
+POST http://localhost:8080/coffees
+Content-Type: application/json
+Connection: keep-alive
+
+{
+  "id": "123",
+  "name": "Cafe Happy"
+}
+
+###
+# find coffee by id
+GET http://localhost:8080/coffees/123
+Content-Type: application/json
+Connection: keep-alive
+
+###
+
+# find a unkown coffee
+GET http://localhost:8080/coffees/unknown
+Content-Type: application/json
+Connection: keep-alive
+
+###
+
+# update a coffee
+
+PUT http://localhost:8080/coffees/123
+Content-Type: application/json
+Connection: keep-alive
+
+{
+  "id": "123",
+  "name": "Cafe Wow"
+}
+
+###
+
+# delete coffee
+
+DELETE http://localhost:8080/coffees/123
+Content-Type: application/json
+Connection: keep-alive
+
+
+
